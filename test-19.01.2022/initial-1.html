@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <!-- <input id="myText" type="text" value="abc" />
+  <br />
+  <input id="myPassword" type="password" value="abc" />
+  <br />
+  <input id="myFile" type="file" />
+  <br />
+  <button id="okButton" type="button">OK</button>
+
+  <p id="output"></p>
+
+  <script>
+    function apply() {
+      // On click on OK : write on the output :
+      //    - the value of the text
+      //    - the value of the password
+      //    - the value of the file selected
+
+      // TIPS : you can use the .value property of each input
+      // TODO
+      let text = document.createElement("div");
+      text.textContent = document.getElementById("myText").value;
+      
+      let password = document.createElement("div");
+      password.textContent = document.getElementById("myPassword").value;
+
+      let file = document.createElement("div");
+      file.textContent = document.getElementById("myFile").value;
+
+      outPut = document.getElementById("output");
+      outPut.appendChild(text);
+      outPut.appendChild(password);
+      outPut.appendChild(file);
+    }
+
+    document.getElementById("okButton").addEventListener("click", apply);
+  </script> -->
+
+
+
+  <div id="container">
+
+  </div>
+
+  <script>
+      let arr = [
+          {description: "haa", prio: "1"}, 
+          {description: "ha", prio: "1"}, 
+          {description: "haa", prio: "0"}, 
+          {description: "ha", prio: "0"}
+      ]
+      for (let iem of arr) {
+          let newItem = document.createElement("p")
+          newItem.textContent = item.description
+          document.body.appendChild(newItem)
+      }
+      function functionTest(event) {
+          let target = event.target;
+          let index = arr.indexOf(target)
+          console.log(index)
+      }
+  </script>
+</body>
+
+</html>
